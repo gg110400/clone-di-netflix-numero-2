@@ -31,6 +31,23 @@ profili.forEach(function(profilo, index) {
     });
 });
 
+let kidsText=document.getElementById("kids-text");
+
+kidsProfile.addEventListener("mouseover", function(){
+  kidsText.classList.remove("fw-normal");
+  kidsText.classList.remove("text-secondary");
+  kidsText.classList.add("highlight");
+})
+
+kidsProfile.addEventListener("mouseout", function(){
+    kidsText.classList.remove("highlight");
+    kidsText.classList.add("fw-normal");
+    kidsText.classList.add("text-secondary");
+})
+
+
+
+
 
 
 
