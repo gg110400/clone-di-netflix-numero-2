@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix profiles</title>
+       <!--Aggiungo il foglio css di bootstrap-->
+       <link
+       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+       rel="stylesheet"
+       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+       crossorigin="anonymous"
+     />
+     <!--Aggiungo il foglio di stile creato da me-->
+     <link rel="stylesheet" href="profiles.css" />
+     <!--Inserisco una favicon-->
+     <link
+       rel="icon"
+       type="image/vnd.icon"
+       href="assets/movies/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-32.png"
+     />
+</head>
+<body>
+<div class="container position">
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <p class="font-size">Who wants to watch Netflix?</p>
+    </div>
+  </div>
+  <div class="row padding-x py-3">
+    <div class="col profile p-0 me-3 text-center">
+      <img src="assets/imgs/bmaz0jfi.png" class="w-100">
+      <h4 class="my-3 fw-normal text-secondary name">Giuls</h4>
+    </div>
+    <div class="col profile p-0 mx-3 text-center">
+      <img src="assets/imgs/2zhl6hka.png" class="w-100">
+      <h4 class="my-3 fw-normal text-secondary name">Andrew</h4>
+    </div>
+    <div class="col profile p-0 mx-3 text-center">
+      <img src="assets/imgs/z45oc8yn.png" class="w-100">
+      <h4 class="my-3 fw-normal text-secondary name">Francis</h4>
+    </div>
+    <div id="kids-profile" class="col kids-profile p-0 mx-3 text-center">
+      <img src="assets/imgs/ecovb5nk.png" class="w-100">
+      <h4 class="my-3 fw-normal text-secondary name">Kids</h4>
+    </div>
+    <div class="col profile p-0 mx-3 d-flex flex-column justify-content-center align-items-center">
+      <div>
+        <i class="fa-solid fa-circle-plus plus text-secondary plus"></i>
+      </div>
+      <div>
+
+      </div>
+       <h4 class="my-3 fw-normal text-secondary name">Add a profile</h4>
+    </div>
+    
+  </div>
+  
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col">
+        <button id="manage-button" type="button">MANAGE PROFILES</button>
+      </div>
+    </div>
+</div>
+
+     
+    
+
+
+        <!--Aggiungo lo script di bootstrap-->
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+      <!--Aggiungo lo script di fontawesome-->
+      <script
+        src="https://kit.fontawesome.com/acd96ea700.js"
+        crossorigin="anonymous"
+      ></script>
+      <!--Aggiungo il mio script-->
+      <script src="profile.js"></script>
+      <!--Aggiungo script di ionicon-->
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+</body>
+</html>

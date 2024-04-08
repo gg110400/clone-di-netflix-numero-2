@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix log-in</title>
+    <!--Aggiungo il foglio css di bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--Aggiungo il foglio di stile creato da me-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Aggiungo il foglio di stile login.css-->
+    <link rel="stylesheet" href="login.css" />
+    <!--Inserisco una favicon-->
+    <link
+      rel="icon"
+      type="image/vnd.icon"
+      href="assets/movies/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-32.png"
+    />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="row">
+      <div class="col">
+        <div class="logo">
+          <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo" />
+        </div>
+      </div>
+    </div>
+    <main class="d-flex align-items center justify-content-center">
+      <div class="form d-flex flex-column align-items-start">
+        <div class="row mx-5 my-5">
+          <div class="col">
+            <h2 class="fw-bold">Accedi</h2>
+          </div>
+        </div>
+        <div class="row mx-5">
+          <div class="col">
+            <input
+              id="email"
+              type="text"
+              placeholder="Email or telephone number"
+              class="text-start text-light email"
+              required
+            />
+          </div>
+        </div>
+        <div class="row my-3 mx-5">
+          <div class="col">
+            <input
+              id="password"
+              type="text"
+              placeholder="Password"
+              class="text-start text-light email"
+              required
+            />
+          </div>
+        </div>
+        <div class="row d-flex mt-3">
+          <div class="col">
+            <button id="log-in" type="button" class="fw-semibold accedi">Log-in</button>
+          </div>
+        </div>
+        <div class="row mt-4 mb-2">
+          <div class="col mx-5">
+            <h5 class="fw-normal text-secondary margin">
+                OPPURE
+            </h5></div>
+        </div>
+        <div class="row my-2">
+        <div class="col">
+            <button class="access-code fw-semibold " type="button codice">Usa un codice di accesso</button>
+        </div>
+      </div>
+      <div class="row my-2">
+        <div class="col">
+            <p class="position">Did you forget your password?</p>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col">
+            <p class="sign-up ">First time on Netflix?  <span class="fw-bold text-light ms-2">Sign up here</span></p>
+        </div>
+      </div>
+      </div>
+      
+    </main>
+
+    <!--Aggiungo lo script di bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--Aggiungo il mio script-->
+    <script src="login.js"></script>
+    
+  </body>
+</html>
