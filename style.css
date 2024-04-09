@@ -11,7 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-/*HEADER*/
 
 header {
   width: 100%;
@@ -78,12 +77,6 @@ nav ul li {
   margin-top: 100px !important;
 }
 
-footer {
-  background-color: #141414;
-}
-
-
-/*MAIN*/
 
 .menù {
   width: 130px;
@@ -271,6 +264,7 @@ nav ul li:hover {
 /*FOOTER*/
 
 footer {
+  background-color: #141414;
   margin-top: 40px;
 }
 
@@ -413,8 +407,6 @@ footer .container .row .col ul li:hover {
 }
 
 /*MEDIA QUERIES*/
-
-
 
 @media (max-width: 576px) { 
   .large-screen {

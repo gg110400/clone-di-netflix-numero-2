@@ -1,5 +1,3 @@
-//PAGINA TV SHOWS
-
 
 //FUNZIONE PER FAR COMPARIRE LA BARRA DI RICERCA SOLO QUANDO CLICCO SULLA LENTE DI INGRANDIMENTO
 let button = document.getElementById("submit-button");
@@ -23,29 +21,33 @@ bar.addEventListener("keydown", function (event) {
 });
 
 
-let option2=document.getElementById("change-profile");
-option2.addEventListener("click", function() {
-  window.location.href="profiles.html";
-})
+//Quando clicco su manage profile oppure su change profile mi porta alla pagina dove seleziono i profili
+let option1 = document.getElementById("manage-profile");
+option1.addEventListener("click", function () {
+  window.location.href = "profiles.html";
+});
+
+let option2 = document.getElementById("change-profile");
+option2.addEventListener("click", function () {
+  window.location.href = "profiles.html";
+});
 
 
-let option1=document.getElementById("manage-profile");
-option1.addEventListener("click", function() {
-  window.location.href="profiles.html";
-})
+//Quando clicco su exit compare la pagina di login
+let exit = document.getElementById("exit");
+exit.addEventListener("click", function () {
+  window.location.href = "login.html";
+});
 
-let exit=document.getElementById("exit");
-exit.addEventListener("click", function(){
-  window.location.href="login.html"
-})
 
-let kidsMenu=document.getElementById("kids-menu");
-let kidsNav=document.getElementById("kids-nav");
-kidsMenu.addEventListener("click", function(){
-  window.location.href="kids.html"
-})
+//Quando clicco su kids nel menù del profilo mi porta alla sezione entflix kids
+let kidsMenu = document.getElementById("kids-menu");
+let kidsNav = document.getElementById("kids-nav");
+kidsMenu.addEventListener("click", function () {
+  window.location.href = "kids.html";
+});
 
-kidsNav.addEventListener("click", function(){
-  window.location.href="kids.html"
-})
-
+//Quando clicco sulla scritta kids nella nav mi porta alla sezione netflix kids
+kidsNav.addEventListener("click", function () {
+  window.location.href = "kids.html";
+});

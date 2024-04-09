@@ -1,4 +1,4 @@
-//PAGINA LOGIN
+//Quando premo invio voglio che i campi di testo vengano resettati
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 email.addEventListener("keypress", function (event) {
@@ -13,6 +13,8 @@ password.addEventListener("keypress", function (event) {
   }
 });
 
+
+//Se l'utente non inserisce email o password non può entrare perchè sono obbligatori
 let accesso = document.getElementById("log-in");
 accesso.addEventListener("click", function (evento) {
   if (password.value === "" || email.value === "") {

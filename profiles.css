@@ -4,9 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+
 .position {
   position: absolute;
-  top: 140px;
+  top: 100px;
   left: 80px;
 }
 
@@ -15,13 +16,17 @@ body {
   height: 220px;
   border: 1px solid black;
   border-radius: 5px;
+  margin: 30px 10px 20px;
 }
+
+
 
 .kids-profile {
   width: 180px;
   height: 220px;
   border: 1px solid black;
   border-radius: 5px;
+  margin:30px 10px 20px;
 }
 
 .kids-profile:hover {
@@ -70,6 +75,7 @@ body {
   position: absolute;
   bottom: -140px;
   left: 520px;
+  margin-bottom:80px;
 }
 
 #manage-button:hover {
@@ -94,28 +100,78 @@ body {
  padding-left: 30px;
 }
 
-
-
-#manage-button {
-    position: absolute;
-    bottom: -140px;
-    left:60px;
+.margin-top{
+    margin-top:60px;
 }
+
+.container {
+    top:5px;
+    left:10px;
+}
+
+.profile:nth-child(3){
+    margin-bottom:50px;
+}
+
 
 
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+    .font-size{
+        font-size:50px;
+        padding-left:20px;
+    }
+
+    .position {
+        left:40px;
+    }    
+    .padding-x {
+     padding-left: 30px;
+    }
+    
+    
+    .margin-top{
+        margin-top:60px;
+    }
+    
+    .container {
+        top:-15px;
+        left:10px;
+    }
+
+    .profile:first-child{
+    margin-right:62px;
+    }
+
+    .profile:nth-child(3){
+        margin-right:62px;
+        margin-bottom:50px;
+    }
+    
+    
    
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    top:20px;
+  }
+
+
+    
+    
+   
   
 }
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .container {
+        top:100px;
+      }
+    
+    
+}
 
   
 
-@media (min-width: 1200px) {
-}
