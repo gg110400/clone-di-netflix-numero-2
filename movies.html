@@ -21,9 +21,45 @@
      />
 </head>
 <body>
-    <!--HEADER-->
-    <header>
-        <div class="d-flex">
+   <!--HEADER VISIBILE IN UNO SCHERMO PICCOLO, MEDIO E MEDIO-GRANDE-->
+   <header class="d-flex justify-content-start small-screen">
+    <div class="logo mx-2 mt-2">
+      <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo di Netflix" />
+    </div>
+    <nav>
+      <ul class="font-size">
+        <li class="">
+          <a
+            href="index.html"
+            class="text-decoration-none link-light fw-semibold"
+          >
+            Home</a
+          >
+        </li>
+        <li class="fw-bold ">
+          <a
+            href="tv-shows.html"
+            class="text-decoration-none link-light fw-normal outline-light "
+            >Tv shows</a
+          >
+        </li>
+        <li>
+          <div class="dropdown position-absolute top-0 my-4 ">
+            <button class="btn btn-body text-white  dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </button>
+            <ul class="dropdown-menu bg-black border-white ">
+              <li><a class="dropdown-item text-light" href="#">Action</a></li>
+              <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+              <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </li>
+        </nav>
+  </header>
+    <!--HEADER VISIBILE SU SCHERMO GRANDE-->
+    <header class="large-screen">
+        <div class="d-flex ">
           <div class="logo mx-2 ms-4 mt-2">
             <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo di Netflix" />
           </div>
@@ -139,8 +175,52 @@
       <!--MAIN-->
       <main>
         <!--Suddivido il main in diverse sections-->
+
+        <!--VISUAL SU SCHERMO GRANDE-->
         <section class="container-fluid ms-0 me-0 p-0 mt-5 mb-3">
-          <div class="visual">
+          <div class="visual large-screen-visual">
+                  <h2 class="film">Film</h2>
+                  <div class="dropdown menu">
+                    <button
+                      class="btn rounded-0 mt-3 btn-outline-light dropdown-toggle tv-menu"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Genres
+                    </button>
+                    <ul class="dropdown-menu bg-black border-light rounded-0">
+                      <li>
+                        <a class="dropdown-item link-light" href="#">Teenager</a>
+                      </li>
+                      <li><a class="dropdown-item link-light" href="#">Anime</a></li>
+                      <li><a class="dropdown-item link-light" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item link-light" href="#">Fantasy</a>
+                      </li>
+                      <li><a class="dropdown-item link-light" href="#">Horror</a></li>
+                      <li>
+                        <a class="dropdown-item link-light" href="#">Commedies</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button type="button" class="bt btn-outline-light grid">
+                    <ion-icon name="menu-outline"></ion-icon>
+                  </button>
+                  <button type="button" class="bt-2 btn-outline-light grid">
+                    <ion-icon name="grid-outline"></ion-icon>
+                  </button>
+             <h6 class="go-up"><img src="assets/imgs/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-24.png" alt="logo di netflix" class="me-2">FILM</h6>
+            <img src="./assets/movies/scritta_di_elvis-removebg-preview.png"  class="elvis-text" alt="scritta elvis">
+            <button type="button" id="play" class="btn btn-light fs-4"><i class="fa-solid fa-play fs-4 me-2"></i>Play it</button>
+            <button type="button" id="info" class=" btn btn-secondary fs-4"><i class="fa-solid fa-circle-info fs-4 me-2"></i>Other info</button>
+            <img  src="assets/movies/elvis da migliorare.jpeg" width="100% " alt="locandina film" height="800">
+  
+        </section>
+
+        <!--VISUAL SU SCHERMO PICCOLO-->
+        <section class="container-fluid ms-0 me-0 p-0 mt-5 mb-3">
+          <div class="visual small-screen-visual">
                   <h2 class="film">Film</h2>
                   <div class="dropdown menu">
                     <button
@@ -176,9 +256,54 @@
             <img src="./assets/movies/scritta_di_elvis-removebg-preview.png"  class="elvis-text" alt="scritta elvis">
             <button type="button" id="play" class="btn btn-light fs-4"><i class="fa-solid fa-play fs-4 me-2"></i>Play it</button>
             <button type="button" id="info" class=" btn btn-secondary fs-4"><i class="fa-solid fa-circle-info fs-4 me-2"></i>Other info</button>
-            <img  src="assets/movies/elvis da migliorare.jpeg" width="100% " alt="locandina film" height="800">
+            <img  src="assets/imgs/540llr94.png" width="100% " alt="locandina film" height="800">
   
         </section>
+
+
+
+        <!--VISUAL SU SCHERMO MEDIO-->
+        <section class="container-fluid ms-0 me-0 p-0 mt-5 mb-3">
+          <div class="visual medium-screen-visual">
+                  <h2 class="film">Film</h2>
+                  <div class="dropdown menu">
+                    <button
+                      class="btn rounded-0 mt-3 btn-outline-light dropdown-toggle "
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Genres
+                    </button>
+                    <ul class="dropdown-menu bg-black border-light rounded-0">
+                      <li>
+                        <a class="dropdown-item link-light" href="#">Teenager</a>
+                      </li>
+                      <li><a class="dropdown-item link-light" href="#">Anime</a></li>
+                      <li><a class="dropdown-item link-light" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item link-light" href="#">Fantasy</a>
+                      </li>
+                      <li><a class="dropdown-item link-light" href="#">Horror</a></li>
+                      <li>
+                        <a class="dropdown-item link-light" href="#">Commedies</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button type="button" class="bt btn-outline-light grid">
+                    <ion-icon name="menu-outline"></ion-icon>
+                  </button>
+                  <button type="button" class="bt-2 btn-outline-light grid">
+                    <ion-icon name="grid-outline"></ion-icon>
+                  </button>
+             <h6 class="go-up"><img src="assets/imgs/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-24.png" alt="logo di netflix" class="me-2">FILM</h6>
+            <img src="./assets/movies/scritta_di_elvis-removebg-preview.png"  class="elvis-text" alt="scritta elvis">
+            <button type="button" id="play" class="btn btn-light fs-4"><i class="fa-solid fa-play fs-4 me-2"></i>Play it</button>
+            <button type="button" id="info" class=" btn btn-secondary fs-4"><i class="fa-solid fa-circle-info fs-4 me-2"></i>Other info</button>
+            <img  src="assets/imgs/540llr94.png" width="100% " alt="locandina film" height="800">
+  
+        </section>
+        
   
         <section class="container-fluid ms-4 mt-5 mb-3">
           <div class="row">

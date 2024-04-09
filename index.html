@@ -21,8 +21,46 @@
     />
   </head>
   <body>
-    <!--HEADER-->
-    <header>
+
+    <!--HEADER VISIBILE IN UNO SCHERMO PICCOLO, MEDIO E MEDIO-GRANDE-->
+    <header class="d-flex justify-content-start small-screen">
+      <div class="logo mx-2 mt-2">
+        <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo di Netflix" />
+      </div>
+      <nav>
+        <ul class="font-size">
+          <li class="">
+            <a
+              href="index.html"
+              class="text-decoration-none link-light fw-semibold"
+            >
+              Home</a
+            >
+          </li>
+          <li class="fw-bold ">
+            <a
+              href="tv-shows.html"
+              class="text-decoration-none link-light fw-normal outline-light "
+              >Tv shows</a
+            >
+          </li>
+          <li>
+            <div class="dropdown position-absolute top-0 my-4 ">
+              <button class="btn btn-body text-white  dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Category
+              </button>
+              <ul class="dropdown-menu bg-black border-white ">
+                <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+          </nav>
+    </header>
+
+    <!--HEADER VISIBILE IN UNO SCHERMO GRANDE-->
+    <header class="large-screen">
       <div class="d-flex">
         <div class="logo mx-2 ms-4 mt-2">
           <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo di Netflix" />
@@ -139,7 +177,8 @@
     <!--MAIN-->
     <main>
       <!--Suddivido il main in diverse sections-->
-      <section class="container-fluid ms-0 me-0 p-0 mt-2 mb-3">
+      <!--Visual versione schermo grande-->
+      <section class="container-fluid ms-0 me-0 p-0 mt-2 mb-3 large-screen-visual">
         <div class="visual">
            <h6 class=" category"><img src="assets/imgs/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-24.png" alt="logo di netflix" class="me-2">FILM</h6>
           <h1 class="title">BIRD BOX</h1>
@@ -149,6 +188,31 @@
 
         </div>
       </section>
+
+      <!--Visual versione schermo piccolo -->
+      <section class="container-fluid ms-0 me-0 p-0 mt-2 mb-3 small-screen-visual">
+        <div class="visual">
+           <h6 class=" category"><img src="assets/imgs/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-24.png" alt="logo di netflix" class="me-2">FILM</h6>
+          <h1 class="title">BIRD BOX</h1>
+          <button type="button" id="play" class="btn btn-light fs-4"><i class="fa-solid fa-play fs-4 me-2"></i>Play it</button>
+          <button type="button" id="info" class=" btn btn-secondary fs-4"><i class="fa-solid fa-circle-info fs-4 me-2"></i>Other info</button>
+          <img src="https://pad.mymovies.it/filmclub/2018/10/196/locandina.jpg" width="100% "  alt="bird box" class="my-5" height="780">
+
+        </div>
+      </section>
+
+      <!--Visual versione schermo medio-->
+      <section class="container-fluid ms-0 me-0 p-0 mt-2 mb-3 medium-screen-visual">
+        <div class="visual">
+           <h6 class=" category"><img src="assets/imgs/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-24.png" alt="logo di netflix" class="me-2">FILM</h6>
+          <h1 class="title">BIRD BOX</h1>
+          <button type="button" id="play" class="btn btn-light fs-4"><i class="fa-solid fa-play fs-4 me-2"></i>Play it</button>
+          <button type="button" id="info" class=" btn btn-secondary fs-4"><i class="fa-solid fa-circle-info fs-4 me-2"></i>Other info</button>
+          <img src="https://assets1.ignimgs.com/2018/12/19/bird-box-button-1545232565688.jpg" width="100% "  alt="bird box" class="my-5" height="780">
+
+        </div>
+      </section>
+
 
       <section class="container-fluid ms-4 mt-5 mb-3">
         <div class="row">

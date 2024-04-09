@@ -20,3 +20,82 @@ body {
     width:230px;
     height:128px;
 }
+
+@media (max-width: 576px) { 
+  .category-kids {
+    color:white;
+    top:53%;
+  }
+
+  .title-kids{
+    width:380px;
+    top:54%;
+  }
+
+  #play, #info {
+    top:80%;
+  }
+
+  
+  
+  
+   }
+  
+  
+  @media (min-width:576px) and (max-width: 768px) { 
+     
+    .category-kids {
+        color:white;
+        top:51%;
+      }
+    
+      .title-kids{
+        width:500px;
+        top:52%;
+      }
+    
+      #play, #info {
+        top:83.2%;
+      }
+ 
+   
+  
+     
+  
+   }
+  
+   
+  @media (min-width:768px) and (max-width:992px) { 
+   
+    .category-kids {
+        color:white;
+        top:45%;
+      }
+    
+      .title-kids{
+        width:500px;
+        top:46%;
+      }
+    
+      #play, #info {
+        top:83.2%;
+      }
+  
+  
+  
+   
+  
+  }
+  
+  
+  @media (min-width: 992px) { 
+   
+  }
+  
+  
+  @media (min-width:1200px) {
+   
+  
+    
+  }
+  

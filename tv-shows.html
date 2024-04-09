@@ -21,8 +21,53 @@
     />
   </head>
   <body>
+    <!--HEADER VISIBILE IN UNO SCHERMO PICCOLO, MEDIO E MEDIO-GRANDE-->
+    <header class="d-flex justify-content-start small-screen">
+      <div class="logo mx-2 mt-2">
+        <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo di Netflix" />
+      </div>
+      <nav>
+        <ul class="font-size">
+          <li class="">
+            <a
+              href="index.html"
+              class="text-decoration-none link-light fw-semibold"
+            >
+              Home</a
+            >
+          </li>
+          <li class="fw-bold ">
+            <a
+              href="tv-shows.html"
+              class="text-decoration-none link-light fw-normal outline-light "
+              >Tv shows</a
+            >
+          </li>
+          <li>
+            <div class="dropdown position-absolute top-0 my-4 ">
+              <button class="btn btn-body text-white  dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Category
+              </button>
+              <ul class="dropdown-menu bg-black border-white ">
+                <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+          </nav>
+    </header>
+
+
+
+
+
+
+
+
     <!--Suddivido il body in header, main e footer-->
-    <header>
+    <!--HEADER VISIBILE SU SCHERMO GRANDE-->
+    <header class="large-screen">
       <div class="d-flex">
         <div class="logo mx-2 ms-4 mt-2">
           <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo di Netflix" />
@@ -112,7 +157,51 @@
 
     <main>
       <!--Suddivido il main in diverse sections-->
-      <section class="container-fluid mt-2 ">
+
+      <!--VISUAL SU SCHERMO GRANDE-->
+      <section class="container-fluid mt-2 large-screen-visual">
+        <div class="visual">
+                <h2 class="tv">TV shows</h2>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-0  btn-outline-light dropdown-toggle my-3"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Genres
+                  </button>
+                  <ul class="dropdown-menu bg-black border-light rounded-0">
+                    <li>
+                      <a class="dropdown-item link-light" href="#">Teenager</a>
+                    </li>
+                    <li><a class="dropdown-item link-light" href="#">Anime</a></li>
+                    <li><a class="dropdown-item link-light" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item link-light" href="#">Fantasy</a>
+                    </li>
+                    <li><a class="dropdown-item link-light" href="#">Horror</a></li>
+                    <li>
+                      <a class="dropdown-item link-light" href="#">Commedies</a>
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="bt btn-outline-light grid">
+                  <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <button type="button" class="bt-2 btn-outline-light grid">
+                  <ion-icon name="grid-outline"></ion-icon>
+                </button>
+           <h6 class="category-tv "><img src="assets/imgs/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-24.png" alt="logo di netflix" class="me-2">TV SERIES</h6>
+          <img src="assets/imgs/scritta_hill_house-removebg-preview.png" class="title-img">
+          <button type="button" id="play" class="btn btn-light fs-4"><i class="fa-solid fa-play fs-4 me-2"></i>Play it</button>
+          <button type="button" id="info" class=" btn btn-secondary fs-4"><i class="fa-solid fa-circle-info fs-4 me-2"></i>Other info</button>
+          <img  src="https://miro.medium.com/v2/resize:fit:1400/1*o24LiuJ4C53nNxfe2aC-3A.png" width="100% " alt="locandina film" height="800">
+
+      </section>
+
+      <!--VISUAL SU SCHERMO PICCOLO-->
+      <section class="container-fluid mt-2 small-screen-visual">
         <div class="visual">
                 <h2 class="tv">TV shows</h2>
                 <div class="dropdown tv-menu">
@@ -149,7 +238,50 @@
           <img src="assets/imgs/scritta_hill_house-removebg-preview.png" class="title-img">
           <button type="button" id="play" class="btn btn-light fs-4"><i class="fa-solid fa-play fs-4 me-2"></i>Play it</button>
           <button type="button" id="info" class=" btn btn-secondary fs-4"><i class="fa-solid fa-circle-info fs-4 me-2"></i>Other info</button>
-          <img  src="assets/movies/hill house da migliorare.jpeg" width="100% " alt="locandina film" height="800">
+          <img  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/285099c2-74ce-46a5-bb25-d9b389e23f85/dgccnhb-690c6bfe-2c60-417a-90bf-e51f38a81c4a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4NTA5OWMyLTc0Y2UtNDZhNS1iYjI1LWQ5YjM4OWUyM2Y4NVwvZGdjY25oYi02OTBjNmJmZS0yYzYwLTQxN2EtOTBiZi1lNTFmMzhhODFjNGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.stTjeFJuxfoPIGy9XGL81RbepKre9Wu515ActtL2dKw" width="100% " alt="locandina film" height="700">
+
+      </section>
+
+
+      <!--VISUAL SU SCHERMO MEDIO-->
+      <section class="container-fluid mt-2 medium-screen-visual">
+        <div class="visual">
+                <h2 class="tv">TV shows</h2>
+                <div class="dropdown tv-menu">
+                  <button
+                    class="btn rounded-0  btn-outline-light dropdown-toggle my-3"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Genres
+                  </button>
+                  <ul class="dropdown-menu bg-black border-light rounded-0">
+                    <li>
+                      <a class="dropdown-item link-light" href="#">Teenager</a>
+                    </li>
+                    <li><a class="dropdown-item link-light" href="#">Anime</a></li>
+                    <li><a class="dropdown-item link-light" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item link-light" href="#">Fantasy</a>
+                    </li>
+                    <li><a class="dropdown-item link-light" href="#">Horror</a></li>
+                    <li>
+                      <a class="dropdown-item link-light" href="#">Commedies</a>
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="bt btn-outline-light grid">
+                  <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <button type="button" class="bt-2 btn-outline-light grid">
+                  <ion-icon name="grid-outline"></ion-icon>
+                </button>
+           <h6 class="category-tv "><img src="assets/imgs/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-24.png" alt="logo di netflix" class="me-2">TV SERIES</h6>
+          <img src="assets/imgs/scritta_hill_house-removebg-preview.png" class="title-img">
+          <button type="button" id="play" class="btn btn-light fs-4"><i class="fa-solid fa-play fs-4 me-2"></i>Play it</button>
+          <button type="button" id="info" class=" btn btn-secondary fs-4"><i class="fa-solid fa-circle-info fs-4 me-2"></i>Other info</button>
+          <img  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/285099c2-74ce-46a5-bb25-d9b389e23f85/dgccnhb-690c6bfe-2c60-417a-90bf-e51f38a81c4a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4NTA5OWMyLTc0Y2UtNDZhNS1iYjI1LWQ5YjM4OWUyM2Y4NVwvZGdjY25oYi02OTBjNmJmZS0yYzYwLTQxN2EtOTBiZi1lNTFmMzhhODFjNGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.stTjeFJuxfoPIGy9XGL81RbepKre9Wu515ActtL2dKw" width="100% " alt="locandina film" height="800">
 
       </section>
       

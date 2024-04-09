@@ -1,83 +1,121 @@
 body {
-    background-color:#141414;
-    color:white;
+  background-color: #141414;
+  color: white;
+  overflow-x: hidden;
 }
 
 .position {
-    position:absolute;
-    top:140px;
-    left:80px;
+  position: absolute;
+  top: 140px;
+  left: 80px;
 }
 
-.profile{
-    width:180px;
-    height:220px;
-    border:1px solid black;
-    border-radius:5px;
-
+.profile {
+  width: 180px;
+  height: 220px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .kids-profile {
-    width:180px;
-    height:220px;
-    border:1px solid black;
-    border-radius:5px;
+  width: 180px;
+  height: 220px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .kids-profile:hover {
-    cursor: pointer;
-    border:3.2px solid white;
+  cursor: pointer;
+  border: 3.2px solid white;
 }
 
 .kids-profile img {
-    width:100%;
-    height:100%;
-    border-radius:5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 .profile img {
-    border-radius:5px;
-    width:100%;
-    height:100%;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
 }
 
 .profile:hover {
-    border:3.2px solid white;
-    cursor: pointer;
+  border: 3.2px solid white;
+  cursor: pointer;
 }
 
 .padding-x {
-    padding-left:60px;
+  padding-left: 60px;
 }
 
 .font-size {
-    font-size:50px;
+  font-size: 50px;
 }
 
 .plus {
-    font-size:70px;
+  font-size: 70px;
 }
 
 #manage-button {
-    background-color: #141414;
-    padding:10px;
-    border:3px solid #676767;
-    width:300px;
-    color:#777777;
-    font-size:20px;
-    transition: border 0.01s ease-in;
-    transition: color 0.01s ease-in;
-    position:absolute;
-    bottom:70px;
-    left:560px;
+  background-color: #141414;
+  padding: 10px;
+  border: 3px solid #676767;
+  width: 300px;
+  color: #777777;
+  font-size: 20px;
+  transition: border 0.01s ease-in;
+  transition: color 0.01s ease-in;
+  position: absolute;
+  bottom: -140px;
+  left: 520px;
 }
 
 #manage-button:hover {
-    border:1px solid white;
-    color:white;
+  border: 1px solid white;
+  color: white;
 }
 
 .highlight {
-    color:white;
-    font-weight:500;
+  color: white;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+.font-size{
+    font-size:40px;
+    padding-left:20px;
+}
+.position {
+    left:40px;
+}    
+.padding-x {
+ padding-left: 30px;
+}
+
+
+
+#manage-button {
+    position: absolute;
+    bottom: -140px;
+    left:60px;
+}
+
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+   
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  
+}
+
+@media (min-width: 992px) {}
+
+  
+
+@media (min-width: 1200px) {
 }

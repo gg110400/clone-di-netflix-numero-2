@@ -411,3 +411,240 @@ footer .container .row .col ul li:hover {
 .margin-y {
   margin-top:120px;
 }
+
+/*MEDIA QUERIES*/
+
+
+
+@media (max-width: 576px) { 
+  .large-screen {
+    display:none;
+  }
+
+  .large-screen-visual {
+    display:none;
+  }
+
+  .medium-screen-visual {
+    display:none;
+  }
+
+  .category {
+    left:5%;
+    top:61%;
+  }
+
+  .title {
+    top: 65%;
+    left:5%;
+    font-size: 60px;
+  }
+
+#play,
+#info {
+  top: 78%;
+}
+
+#play {
+  left: 5%;
+  width: 130px;
+}
+
+#info {
+  margin-left:80px;
+}
+
+.tv-menu {
+  left:5%;
+  top:23%;
+}
+
+.grid {
+  display:none;
+}
+
+.menu {
+  margin-left:60px;
+}
+
+.go-up {
+  top:58%;
+  color:white;
+}
+.elvis-text {
+  width:200px;
+  top:60%;
+}
+
+
+
+ }
+
+
+@media (min-width:576px) and (max-width: 768px) { 
+   .large-screen {
+    display:none;
+   }
+
+   .large-screen-visual {
+    display:none;
+   }
+
+   .medium-screen-visual{
+    display:none;
+   }
+
+   .category {
+    left:5%;
+    top:61%;
+  }
+
+  .title {
+    top: 65%;
+    left: 5%;
+    font-size: 70px;
+  }
+
+#play,
+#info {
+  top: 78%;
+}
+
+#play {
+  left:5%;
+  width: 130px;
+}
+
+#info {
+  margin-left:80px;
+}
+
+.tv-menu {
+  left:5%;
+  top:23%;
+}
+
+.grid {
+  display:none;
+}
+
+.menu {
+  margin-left:60px;
+}
+
+.go-up {
+  top:58%;
+  color:white;
+}
+
+.elvis-text {
+  width:250px;
+  top:60%;
+}
+ 
+
+   
+
+ }
+
+ 
+@media (min-width:768px) and (max-width:992px) { 
+  .large-screen {
+   display:none;
+  }
+
+  .small-screen-visual{
+    display:none;
+  }
+
+  .large-screen-visual {
+    display:none;
+  }
+
+  .category {
+    left:5%;
+    top:61%;
+  }
+
+  .title {
+    top: 65%;
+    left: 5%;
+    font-size: 70px;
+  }
+
+#play,
+#info {
+  top: 78%;
+}
+
+#play {
+  left:5%;
+  width: 130px;
+}
+
+#info {
+  margin-left:50px;
+}
+
+.tv-menu {
+  left:5%;
+  top:23%;
+}
+
+.grid {
+  display:none;
+}
+
+.menu {
+  margin-left:60px;
+}
+
+.go-up {
+  top:58%;
+  color:white;
+}
+
+.elvis-text {
+  width:280px;
+  top:60%;
+}
+
+ 
+
+}
+
+
+@media (min-width: 992px) { 
+  .small-screen {
+    display:none;
+  }
+
+  .small-screen-visual{
+    display:none;
+  }
+
+  .medium-screen-visual{
+    display:none;
+  }
+
+  #info {
+    margin-left:60px;
+  }
+  
+  .tv-menu {
+   margin-left:40px;
+  }
+}
+
+
+@media (min-width:1200px) {
+  #info {
+    margin-left:35px;
+  }
+
+  .tv-menu {
+    margin-left:10px;
+   }
+
+  
+}

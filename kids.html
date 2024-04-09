@@ -22,8 +22,44 @@
     />
   </head>
   <body>
-    <!--HEADER-->
-    <header>
+     <!--HEADER VISIBILE IN UNO SCHERMO PICCOLO, MEDIO E MEDIO-GRANDE-->
+     <header class="d-flex justify-content-start small-screen">
+      <div class="logo mx-2 mt-2">
+        <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo di Netflix" />
+      </div>
+      <nav>
+        <ul class="font-size">
+          <li class="">
+            <a
+              href="index.html"
+              class="text-decoration-none link-light fw-semibold"
+            >
+              Home</a
+            >
+          </li>
+          <li class="fw-bold ">
+            <a
+              href="tv-shows.html"
+              class="text-decoration-none link-light fw-normal outline-light "
+              >Tv shows</a
+            >
+          </li>
+          <li>
+            <div class="dropdown position-absolute top-0 my-4 ">
+              <button class="btn btn-body text-white  dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Category
+              </button>
+              <ul class="dropdown-menu bg-black border-white ">
+                <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+          </nav>
+    </header>
+    <!--HEADER VISIBILE SU SCHERMO GRANDE-->
+    <header class="large-screen">
       <div class="d-flex">
         <div class="logo mx-2 ms-4 mt-2">
           <img src="assets/imgs/Netflix_Logo_RGB.png" />
@@ -140,8 +176,10 @@
     <!--MAIN-->
     <main>
       <!--Suddivido il main in diverse sections-->
+
+      <!--VISUAL SCHERMO GRANDE-->
       <section class="container-fluid ms-0 me-0 p-0 mt-2 mb-3">
-        <div class="visual">
+        <div class="visual large-screen-visual">
           <h6 class="category-kids">
             <img
               src="assets/imgs/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-24.png"
@@ -161,6 +199,65 @@
           </button>
           <img
             src="https://images-0.rakuten.tv/storage/snapshot/shot/904c708b-8673-4d6d-9bf8-872762293633-snapshot-1590664571.jpeg"
+            width="100% "
+            alt="bird box"
+            class="my-5"
+            height="780"
+          />
+        </div>
+      </section>
+
+      <!--VISUAL SCHERMO PICCOLO-->
+      <section class="container-fluid ms-0 me-0 p-0 mt-2 mb-3">
+        <div class="visual small-screen-visual">
+          <h6 class="category-kids">
+            <img
+              src="assets/imgs/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-24.png"
+              alt="logo di netflix"
+              class="me-2"
+            />FILM
+          </h6>
+          <img
+            src="assets/movies/scritta_film-removebg-preview.png"
+            class="title-kids"
+          />
+          <button type="button" id="play" class="btn btn-light fs-4">
+            <i class="fa-solid fa-play fs-4 me-2"></i>Play it
+          </button>
+          <button type="button" id="info" class="btn btn-secondary fs-4">
+            <i class="fa-solid fa-circle-info fs-4 me-2"></i>Other info
+          </button>
+          <img
+            src="assets/imgs/Cloudy with a Chance of Meatballs, Michael Kurinsky.jpg"
+            width="100% "
+            alt="bird box"
+            class="my-5"
+            height="800"
+          />
+        </div>
+      </section>
+      <!--VISUAL SCHERMO MEDIO-->
+      <section class="container-fluid ms-0 me-0 p-0 mt-2 mb-3">
+        <div class="visual medium-screen-visual">
+          <h6 class="category-kids">
+            <img
+              src="assets/imgs/icons8-netflix-esterno-un-servizio-video-on-demand-americano-logo-a-colori-tal-revivo-24.png"
+              alt="logo di netflix"
+              class="me-2"
+            />FILM
+          </h6>
+          <img
+            src="assets/movies/scritta_film-removebg-preview.png"
+            class="title-kids"
+          />
+          <button type="button" id="play" class="btn btn-light fs-4">
+            <i class="fa-solid fa-play fs-4 me-2"></i>Play it
+          </button>
+          <button type="button" id="info" class="btn btn-secondary fs-4">
+            <i class="fa-solid fa-circle-info fs-4 me-2"></i>Other info
+          </button>
+          <img
+            src="assets/imgs/Cloudy_With.A.Chance.Of.Meatballs.6"
             width="100% "
             alt="bird box"
             class="my-5"

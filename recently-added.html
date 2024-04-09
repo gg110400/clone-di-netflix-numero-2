@@ -21,8 +21,46 @@
      />
 </head>
 <body>
-    <!--HEADER-->
-    <header>
+   <!--HEADER VISIBILE IN UNO SCHERMO PICCOLO, MEDIO E MEDIO-GRANDE-->
+   <header class="d-flex justify-content-start small-screen">
+    <div class="logo mx-2 mt-2">
+      <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo di Netflix" />
+    </div>
+    <nav>
+      <ul class="font-size">
+        <li class="">
+          <a
+            href="index.html"
+            class="text-decoration-none link-light fw-semibold"
+          >
+            Home</a
+          >
+        </li>
+        <li class="fw-bold ">
+          <a
+            href="tv-shows.html"
+            class="text-decoration-none link-light fw-normal outline-light "
+            >Tv shows</a
+          >
+        </li>
+        <li>
+          <div class="dropdown position-absolute top-0 my-4 ">
+            <button class="btn btn-body text-white  dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </button>
+            <ul class="dropdown-menu bg-black border-white ">
+              <li><a class="dropdown-item text-light" href="#">Action</a></li>
+              <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+              <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </li>
+        </nav>
+  </header>
+
+
+    <!--HEADER VISIBILE SU SCHERMO GRANDE-->
+    <header class="large-screen">
         <div class="d-flex">
           <div class="logo mx-2 ms-4 mt-2">
             <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo di Netflix" />
